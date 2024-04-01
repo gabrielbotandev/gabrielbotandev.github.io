@@ -70,7 +70,6 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 300px;
 }
 
 .text {
@@ -86,23 +85,30 @@ button:hover {
     margin: 30px;
 }
 
-.image {
+.image img {
     float: right;
     margin-left: 50px;
-}
-
-img {
     border-radius: 50%;
     width: 300px;
+    box-shadow: 10px 10px 20px 4px #101013;
 }
 
 .sobre-mim {
     display: flex;
     align-items: center;
+    padding: 100px;
+    margin: 200px;
 }
 
 .sobre-mim h2 {
-    font-size: 50px;
+    font-size: 40px;
+}
+
+.sobre-mim .title {
+    text-align: left;
+    padding: 30px;
+    border: 1px solid #3E51CA;
+    border-radius: 15px;
 }
 
 .sobre-mim img {
@@ -137,7 +143,7 @@ a {
 
 span {
     color: #3E51CA;
-    font-size: 50px;
+    font-size: 100px;
 }
 
 .contato {
@@ -189,7 +195,7 @@ span {
 }
 
 .css-typing p:nth-child(2) {
-    width: 500px;
+    width: 520px;
     opacity: 0;
     -webkit-animation: type2 1s steps(10, end);
     animation: type2 1s steps(10, end);
@@ -202,7 +208,7 @@ span {
 .css-typing p:nth-child(3) {
     width: 520px;
     opacity: 0;
-    -webkit-animation: type3 1s steps(13, end),
+    -webkit-animation: type3 1.5s steps(13, end),
         blink 0.5s step-end infinite alternate;
     animation: type3 1s
     steps(13, end), blink 0.5s step-end infinite alternate;
@@ -314,7 +320,7 @@ span {
 
 @-webkit-keyframes blink {
     50% {
-        border-color: tranparent;
+        border-color: transparent;
     }
 }
 
