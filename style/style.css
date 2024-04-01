@@ -1,13 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #1a1b1e;
     font-family: "Montserrat", sans-serif;
     min-height: 100vh;
 }
 
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10%;
+}
 
+.logo {
+    border-radius: 0;
+    width: 125px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    color: #fff;
+}
+
+.nav-links li a:hover {
+    color: #3E51CA;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    padding: 9px;
+    border: 1px solid #3E51CA;
+    border-radius: 10px;
+    background-color: #1a1b1e;
+    color: #fff;
+    cursor: pointer;
+    transition: .7s ease 0s;
+}
+
+button:hover {
+    background-color: #3E51CA;
+    color: #1a1b1e;
+    transform: scale(0.9);
+}
+
+.home {
+    margin: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 300px;
+}
 
 .text {
     color: #ffffff;
@@ -18,48 +82,62 @@ body {
     font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
-    margin-right: 100px;
-}
-
-.presentation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0;
+    margin: 30px;
 }
 
 .image {
     float: right;
+    margin-left: 50px;
 }
 
 img {
     border-radius: 50%;
-    vertical-align: auto;
     width: 300px;
+}
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+}
+
+.sobre-mim h2 {
+    font-size: 50px;
+}
+
+.sobre-mim img {
+    border-radius: 30px;
+    margin: 0 50px 0 50px;
+}
+
+.sm-text {
+    color: #fff;
+    margin: 0 50px 0 50px;
+    font-size: 25px;
 }
 
 a {
     text-decoration: none;
     border: 1px none;
     border-radius: 100px;
-    
     display: inline-block;
-}
-
-.container .links {
-    color: #fff;
-    text-decoration: none;
-    margin: 50px;
 }
 
 .contatos {
     margin-bottom: 0px;
     padding: 50px;
+    align-items: center;
 }
 
 .title {
     color: #fff;
     font-size: 30px;
     text-align: center;
+}
+
+span {
+    color: #3E51CA;
+    font-size: 50px;
 }
 
 .contato {
@@ -83,15 +161,17 @@ a {
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 40px;
+    transition: .5s ease;
 }
 
 .contato a:hover {
     background-color: #3E51CA;
-    transform: scale(1.05);
+    transform: scale(0.9);
 }
 
 .css-typing {
     width: 629px;
+    margin-right: 50px;
 }
 
 .css-typing p {
@@ -101,7 +181,7 @@ a {
 }
 
 .css-typing p:nth-child(1) {
-    width: 190px;
+    width: 200px;
     -webkit-animation: type 1s steps(4, end);
     animation: type 0.5s steps(4, end);
     -webkit-animation-fill-mode: forwards;
