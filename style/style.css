@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #1a1b1e;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+}
+
+
+
+
+.text {
+    color: #ffffff;
+    font-size: 4em;
+    letter-spacing: 5px;
+    border-right: 4px solid;
+    width: 99.5%;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 100px;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    float: right;
+}
+
+img {
+    border-radius: 50%;
+    vertical-align: auto;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    border: 1px none;
+    border-radius: 100px;
+    
+    display: inline-block;
+}
+
+.container .links {
+    color: #fff;
+    text-decoration: none;
+    margin: 50px;
+}
+
+.contatos {
+    margin-bottom: 0px;
+    padding: 50px;
+}
+
+.title {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contato {
+    text-align: center;
+}
+
+.contato i {
+    font-size: 100px;
+    padding: 30px;
+    color: #3E51CA;
+}
+
+.contato a i:hover {
+    color: #1a1b1e;
+}
+
+.contato a {
+    border: 1px solid #3E51CA;
+    border-radius: 50%;
+    background-color: #1a1b1e;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.contato a:hover {
+    background-color: #3E51CA;
+    transform: scale(1.05);
+}
+
+.css-typing {
+    width: 629px;
+}
+
+.css-typing p {
+    border-right: 0.05em solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.css-typing p:nth-child(1) {
+    width: 190px;
+    -webkit-animation: type 1s steps(4, end);
+    animation: type 0.5s steps(4, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+    width: 500px;
+    opacity: 0;
+    -webkit-animation: type2 1s steps(10, end);
+    animation: type2 1s steps(10, end);
+    -webkit-animation-delay: 0s;
+    animation-delay: 1.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+    width: 520px;
+    opacity: 0;
+    -webkit-animation: type3 1s steps(13, end),
+        blink 0.5s step-end infinite alternate;
+    animation: type3 1s
+    steps(13, end), blink 0.5s step-end infinite alternate;
+    -webkit-animation-delay: 0s;
+    animation-delay: 2.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+
+    99.9% {
+        border-right: 0.05em solid #fff;
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+@-webkit-keyframes type {
+    0% {
+        width: 0;
+    }
+
+    99.9% {
+        border-right: 0.05em solid #fff;
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    99.9% {
+        border-right: 0.05em solid #fff;
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@-webkit-keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    99.9% {
+        border-right: 0.05em solid #fff;
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes type3 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    50% {
+        border-color: tranparent;
+    }
+}
+
+@media (max-width: 645px) {
+    .presentation {
+        flex-direction: column-reverse;
+    }
+
+    .css-typing {
+        width: fit-content;
+    }
+}
