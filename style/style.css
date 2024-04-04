@@ -32,17 +32,20 @@ header {
     justify-content: space-between;
     padding: 10px 10%;
     background-color: #1a1b1e;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .2)
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .2);
 }
 
 .logo {
     border-radius: 0;
     width: 125px;
     cursor: pointer;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links {
     list-style: none;
+    padding: 0px;
 }
 
 .nav-links li {
