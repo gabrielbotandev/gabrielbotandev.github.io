@@ -5,18 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio</title>
-  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
 </head>
 
 <body>
   <header>
-    <a href="#home"><img src="images/logo.png" alt="logo" class="logo" /></a>
+    <a href="#home" class="logo">G. Botan</a>
     <nav>
       <ul class="nav-links">
         <li><a href="#sobre-mim">Sobre mim</a></li>
         <li><a href="#curriculo">Currículo</a></li>
-        <li><a href="#educacao">Educação</a></li>
+        <li><a href="#hard-skills">Conhecimentos</a></li>
         <li><a href="#projetos">Projetos</a></li>
       </ul>
     </nav>
@@ -24,19 +24,19 @@
   </header>
   <div>
     <section class="home" id="home">
-      <div class="css-typing">
+      <div class="text-typing">
         <p class="text">Olá,</p>
         <p class="text">meu nome é</p>
         <p class="text">Gabriel Botan</p>
       </div>
       <div class="photo">
-        <img src="images/foto.jpg" alt="" />
+        <img src="assets/images/foto.jpg" alt="" />
       </div>
     </section>
   </div>
   <div>
     <section class="sobre-mim" id="sobre-mim">
-      <h2 class="title">sobre <br><span>mim</span></h2>
+      <h2 class="title">sobre <br><span class="emphasis">mim</span></h2>
       <p class="sm-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus justo ex, a rutrum massa semper in. Morbi
         vestibulum, lacus ac viverra molestie, nunc leo euismod mi, ac bibendum felis magna tincidunt nibh.
@@ -45,17 +45,22 @@
   </div>
   <div>
     <section class="curriculo" id="curriculo">
-      <p class="cv-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus justo ex, a rutrum massa semper in. Morbi
-        vestibulum, lacus ac viverra molestie, nunc leo euismod mi, ac bibendum felis magna tincidunt nibh.
-      </p>
-      <h2 class="title">minhas<br><span>habilidades</span></h2>
+      <ul class="cv-text">
+        <li>19 anos, residente em Jahu - SP</li>
+        <li>Atualmente cursando <span class="bold">desenvolvimento de software multiplataforma</span> na Fatec Jahu</li>
+        <li>Ensino médio completo <span class="bold">2021-2023</span></li>
+        <li><span class="bold">Soft skills: </span>Educado, disciplinado, simpático, sempre animado e pronto para novos
+          desafios</li>
+        <li><span class="bold">Hard Skills: </span><a href="#hard-skills">Ver</a></li>
+        <li><span class="bold">Hobbies: </span>jogar online, desenhar, estudar programação,</li>
+      </ul>
+      <h2 class="title">meu<br><span class="emphasis">currículo</span></h2>
     </section>
   </div>
   <div>
-    <section class="educacao" id="educacao">
-      <h2 class="title">minha<br><span>escolaridade</span></h2>
-      <p class="ed-text">
+    <section class="hard-skills" id="hard-skills">
+      <h2 class="title">Linguagens &<br><span class="emphasis">tecnologias</span></h2>
+      <p class="hs-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus justo ex, a rutrum massa semper in. Morbi
         vestibulum, lacus ac viverra molestie, nunc leo euismod mi, ac bibendum felis magna tincidunt nibh.
       </p>
@@ -63,7 +68,7 @@
   </div>
   <div>
     <section class="projetos" id="projetos">
-      <h2 class="title">meus<span>projetos</span></h2>
+      <h2 class="title">meus<span class="emphasis">projetos</span></h2>
       <div class="visualizer">
         <a href=""><img src="" alt=""></a>
         <a href=""><img src="" alt=""></a>
@@ -88,7 +93,41 @@
           <i class="bx bxl-gmail"></i>
         </a>
     </section>
-    <footer></footer>
+    <footer>
+      <div class="footerContainer">
+        <div class="icons">
+          <a href="https://www.instagram.com/botan.gabriel/">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/gabrielficciobotan/">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://github.com/gabrielbotandev">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="mailto:gabrielficciobotan@gmail.com">
+            <i class="bx bxl-gmail"></i>
+          </a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#sobre-mim">Sobre</a>
+            </li>
+            <li>
+              <a href="https://fatecjahu.edu.br/">Fatec</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>Copyright &copy 2024, Gabriel F. Botan</p>
+      </div>
+    </footer>
   </div>
 </body>
+
 </html>
