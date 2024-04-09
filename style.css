@@ -27,8 +27,9 @@ section {
 
 header {
     position: fixed;
-    width: 100vw;
-    top: 0px;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 100;
     display: flex;
     justify-content: space-between;
@@ -38,30 +39,33 @@ header {
 }
 
 .logo {
-    display: flex;
+    
     border-radius: 0;
     font-size: 40px;
     font-weight: 600;
     color: var(--font-color);
     cursor: pointer;
     padding: 0;
-    margin: 5px 0 0 0;
-    align-content: center;
+    
+    
 }
 
 .nav-links {
     list-style: none;
     padding: 0px;
+    text-align: center;
 }
 
 .nav-links li {
     display: inline-block;
     padding: 0px 20px;
+    
 }
 
 .nav-links li a {
     transition: all .3s ease 0s;
     color: #fff;
+    align-content: center;
 }
 
 .nav-links li a:hover {
@@ -81,7 +85,7 @@ button {
 
 a,
 button {
-    margin-top: 5px;
+    align-content: center;
     font-weight: 500;
     font-size: 16px;
 }
@@ -90,10 +94,6 @@ button:hover {
     background-color: var(--main-color);
     color: var(--bg-color);
     transform: scale(0.9);
-}
-
-.bold {
-    font-weight: bold;
 }
 
 .emphasis {
@@ -173,7 +173,7 @@ button:hover {
 }
 
 .curriculo ul li a:hover {
-    color: var(--font-color);
+    color: #485eeb;
 }
 
 .curriculo h2 {
@@ -181,21 +181,21 @@ button:hover {
 }
 
 .curriculo .title {
-    text-align: left;
+    text-align: right;
     padding: 30px;
     border-radius: 15px;
 }
 
-.cv-text {
+.cv-body {
     color: #fff;
     margin: 0 50px 0 50px;
-    font-size: 25px;
+    font-size: 1.5rem;
     border: 1px solid var(--main-color);
     border-radius: 15px;
     padding: 50px;
 }
 
-.cv-text li {
+.cv-body li {
     padding: 20px;
 }
 
