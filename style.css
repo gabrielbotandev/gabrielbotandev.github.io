@@ -39,15 +39,12 @@ header {
 }
 
 .logo {
-    
     border-radius: 0;
     font-size: 40px;
     font-weight: 600;
     color: var(--font-color);
     cursor: pointer;
     padding: 0;
-    
-    
 }
 
 .nav-links {
@@ -161,21 +158,6 @@ button:hover {
     align-items: center;
 }
 
-.curriculo ul li a {
-    text-decoration: underline;
-    color: var(--main-color);
-    font-size: 25px;
-    font-family: "Montserrat", sans-serif;
-    padding: 10px;
-    margin-left: 10px;
-    border: 1px hidden var(--main-color);
-    border-radius: 5px;
-}
-
-.curriculo ul li a:hover {
-    color: #485eeb;
-}
-
 .curriculo h2 {
     font-size: 40px;
 }
@@ -211,19 +193,24 @@ button:hover {
 .hard-skills .title {
     text-align: left;
     padding: 30px;
-    border: 1px solid var(--main-color);
-    border-radius: 15px;
 }
 
-.hard-skills img {
-    border-radius: 30px;
-    margin: 0 50px 0 50px;
-}
-
-.hs-text {
+.hs-body {
     color: var(--font-color);
     margin: 0 50px 0 50px;
-    font-size: 25px;
+    font-size: 3rem;
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.hs-body p {
+    font-size: 2rem;
+}
+
+.hs-body i {
+    font-size: 6rem;
+    padding: 20px;
 }
 
 .projetos {
