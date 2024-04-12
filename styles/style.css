@@ -335,7 +335,7 @@ button:hover {
 }
 
 .about-me .title {
-    text-align: left;
+    text-align: right;
     padding: 30px;
 }
 
@@ -439,6 +439,42 @@ button:hover {
     margin: 0 100px 100px 100px;
 }
 
+.projects-display {
+    display: flex;
+}
+
+.project {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    margin: 0 15px 0 15px;
+}
+
+.project img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.project a {
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    margin: 15px;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+    color: var(--font-color);
+    transition: .5s ease;
+}
+
+.project a:hover {
+    transform: scale(0.95);
+    transition: .5s ease;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
 /* -------------------------------------------*/
 /*                  CONTACTS                  */
 /* -------------------------------------------*/
@@ -470,6 +506,7 @@ button:hover {
     font-size: 100px;
     padding: 30px;
     color: var(--main-color);
+    transition: .5s ease;
 }
 
 .contact a {
