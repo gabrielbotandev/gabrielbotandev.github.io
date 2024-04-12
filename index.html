@@ -5,48 +5,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
-
-  <link rel="shortcut icon" type="imagex/png" href="">
 </head>
 
 <body>
   <header>
-    <a href="#home" class="logo">G. Botan</a>
+    <a href="#home" class="logo"><span>g.</span>botan</a>
     <nav>
       <ul class="nav-links">
-        <li><a href="#sobre-mim">Sobre mim</a></li>
-        <li><a href="#curriculo">Currículo</a></li>
-        <li><a href="#hard-skills">Conhecimentos</a></li>
-        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#about-me">Sobre mim</a></li>
+        <li><a href="#curriculum">Currículo</a></li>
+        <li><a href="#hard-skills">Tecnologias</a></li>
+        <li><a href="#projects">Projetos</a></li>
       </ul>
     </nav>
-    <a href="#contatos"><button>Contato</button></a>
+    <a href="#contacts"><button>Contato</button></a>
   </header>
-  <div>
+  <div class="homeContainer">
     <section class="home" id="home">
       <div class="text-typing">
         <p class="text">Olá,</p>
         <p class="text">meu nome é</p>
-        <p class="text">Gabriel Botan</p>
+        <p class="text">Gabriel <span>Botan</span></p>
       </div>
       <div class="photo">
         <img src="assets/images/foto.jpg" alt="" />
       </div>
     </section>
   </div>
-  <div>
-    <section class="sobre-mim" id="sobre-mim">
+  <div class="aboutContainer">
+    <section class="about-me" id="about-me">
       <h2 class="title">sobre <br><span class="emphasis">mim</span></h2>
-      <p class="sm-text">
+      <p class="about-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus justo ex, a rutrum massa semper in. Morbi
         vestibulum, lacus ac viverra molestie, nunc leo euismod mi, ac bibendum felis magna tincidunt nibh.
       </p>
     </section>
   </div>
-  <div>
-    <section class="curriculo" id="curriculo">
+  <div class="cvContainer">
+    <section class="curriculum" id="curriculum">
       <ul class="cv-body">
         <li>
           Atualmente cursando <b>desenvolvimento de software multiplataforma</b> na Fatec Jahu
@@ -59,7 +57,7 @@
           pronto para novos desafios
         </li>
         <li>
-          <b>Idiomas: </b>Inglês: B1 (intermediário)
+          <b>Idiomas: </b>Inglês B1 (intermediário)
         </li>
         <li>
           <b>Objetivo profissional: </b>Busco oportunidade para aprimorar minhas habilidades e conhecimentos,
@@ -70,40 +68,37 @@
       <h2 class="title">meu<br><span class="emphasis">currículo</span></h2>
     </section>
   </div>
-  <div>
+  <div class="hsContainer">
     <section class="hard-skills" id="hard-skills">
       <h2 class="title">Linguagens &<br><span class="emphasis">tecnologias</span></h2>
       <p class="hs-body">
-        <b>Linguagens:</b> <br>
-        <i style="color: #3178c6;" class='bx bxl-typescript'></i>
-        <i style="color: yellow;" class='bx bxl-javascript'></i>
-        <i style="color: orangered;" class='bx bxl-html5'></i>
-        <i style="color: #29a9df;" class='bx bxl-css3'></i>
+        Linguagens: <br>
+        <img src="assets/icons/html.svg" alt="">
+        <img src="assets/icons/css.svg" alt="">
+        <img src="assets/icons/javascript.svg" alt="">
         <br>
-        <b>Tecnologias:</b> <br>
-        <i style="color: cyan;" class='bx bxl-react'></i>
-        <i style="color: #1caebb;" class='bx bxl-tailwind-css'></i>
-        <i class='bx bx-data'></i>
-        <i style="color: #3fabf3;" class='bx bxl-visual-studio'></i>
-        <i style="color: #f05033;" class='bx bxl-git'></i>
-        <i class='bx bxl-windows'></i>
+        Tecnologias: <br>
+        <img src="assets/icons/vscode.svg" alt="">
+        <img src="assets/icons/visualstudio.svg" alt="">
+        <img src="assets/icons/git.svg" alt="">
+        <img src="assets/icons/mysql.svg" alt="">
+        <img src="assets/icons/tailwind.svg" alt="">
+        <img src="assets/icons/kali.svg" alt="">
       </p>
     </section>
   </div>
-  <div>
-    <section class="projetos" id="projetos">
+  <div class="projectsContainer">
+    <section class="projects" id="projects">
       <h2 class="title">meus<span class="emphasis">projetos</span></h2>
-      <div class="visualizer">
-        <a class="project1" href="https://github.com/gabrielbotandev/pass-in-reactjs"></a>
-        <a class="project2" href=""></a>
-        <a class="project3" href=""></a>
+      <div class="projects-display">
+        
       </div>
     </section>
   </div>
-  <div>
-    <section class="contatos" id="contatos">
+  <div class="contactsContainer">
+    <section class="contacts" id="contacts">
       <h2 class="title">Conecte-se comigo</h2>
-      <div class="contato">
+      <div class="contact">
         <a href="https://www.instagram.com/botan.gabriel/">
           <i class="bx bxl-instagram"></i>
         </a>
@@ -118,36 +113,7 @@
         </a>
     </section>
     <footer>
-      <div class="footerContainer">
-        <div class="icons">
-          <a href="https://www.instagram.com/botan.gabriel/">
-            <i class="bx bxl-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/gabrielficciobotan/">
-            <i class="bx bxl-linkedin"></i>
-          </a>
-          <a href="https://github.com/gabrielbotandev">
-            <i class="bx bxl-github"></i>
-          </a>
-          <a href="mailto:gabrielficciobotan@gmail.com">
-            <i class="bx bxl-gmail"></i>
-          </a>
-        </div>
-        <div class="footerNav">
-          <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#sobre-mim">Sobre</a>
-            </li>
-            <li>
-              <a href="https://fatecjahu.edu.br/">Fatec</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footerBottom">
+      <div class="footer">
         <p>Copyright &copy 2024, Gabriel F. Botan</p>
       </div>
     </footer>
