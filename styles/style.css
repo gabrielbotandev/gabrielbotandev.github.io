@@ -5,9 +5,7 @@
     --bg-color: rgb(241, 241, 241);
     --main-color: #3E51CA;
     --font-color: #141414;
-    --footer-color: #121214;
 }
-
 
 * {
     box-sizing: border-box;
@@ -58,12 +56,17 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
+    left: 10px;
     z-index: 100;
     display: flex;
     justify-content: space-between;
-    padding: 20px 10%;
+    padding: 10px 10%;
     background-color: var(--bg-color);
+    box-shadow: 0px 10px 10px -11px rgba(0,0,0,0.75);
+}
+
+nav {
+    align-content: center;
 }
 
 .logo {
@@ -98,7 +101,7 @@ header {
     align-content: center;
     border-radius: 0;
     margin: 0 20px;
-    padding: 5px;
+    padding: 10px 0 5px 0;
     border-bottom: 3px solid transparent;
     transition: .3s ease;
 }
@@ -347,7 +350,10 @@ button:hover {
 .about-text {
     color: var(--font-color);
     margin: 0 50px 0 50px;
-    font-size: 25px;
+    font-size: 1.5rem;
+    border: 1px solid var(--main-color);
+    border-radius: 108px 25px 108px 25px;
+    padding: 50px;
 }
 
 /* -------------------------------------------*/
@@ -380,6 +386,17 @@ button:hover {
 
 .cv-body li {
     padding: 20px;
+}
+
+.cv-body a {
+    font-size: 1.5rem;
+    color: var(--font-color-color);
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.cv-body a:hover {
+    color: var(--main-color);
 }
 
 /* -------------------------------------------*/
@@ -475,6 +492,12 @@ button:hover {
     color: var(--bg-color);
 }
 
+.project-use i {
+    font-size: 2rem;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
 /* -------------------------------------------*/
 /*                  CONTACTS                  */
 /* -------------------------------------------*/
@@ -489,7 +512,7 @@ button:hover {
 }
 
 .contacts .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .title {
@@ -500,6 +523,7 @@ button:hover {
 
 .contact {
     text-align: center;
+    padding: 100px;
 }
 
 .contact i {
@@ -513,9 +537,7 @@ button:hover {
     border: 1px solid var(--main-color);
     border-radius: 50%;
     background-color: var(--bg-color);
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
+    margin: 50px 50px 0 50px;
     transition: .5s ease;
 }
 
@@ -543,3 +565,5 @@ button:hover {
 .footer p {
     color: white;
 }
+
+
