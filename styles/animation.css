@@ -1,0 +1,83 @@
+.text-typing p:nth-child(1) {
+    width: 200px;
+    -webkit-animation: type 1s steps(4, end);
+    animation: type 0.5s steps(4, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.text-typing p:nth-child(2) {
+    width: 520px;
+    opacity: 0;
+    -webkit-animation: type2 1s steps(10, end);
+    animation: type2 1s steps(10, end);
+    -webkit-animation-delay: 0s;
+    animation-delay: 1.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.text-typing p:nth-child(3) {
+    width: 520px;
+    opacity: 0;
+    -webkit-animation: type3 1.5s steps(13, end),
+        blink 0.5s step-end infinite alternate;
+    animation: type3 1s steps(13, end), blink 0.5s step-end infinite alternate;
+    -webkit-animation-delay: 0s;
+    animation-delay: 2.3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+
+    99.9% {
+        border-right: 0.05em solid var(--font-color);
+    }
+
+    100% {
+        border: none;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    99.9% {
+        border-right: 0.05em solid var(--font-color);
+    }
+
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

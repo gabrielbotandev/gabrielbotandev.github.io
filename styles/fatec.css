@@ -1,0 +1,41 @@
+:root {
+    --bg-color: #F9F9FB;
+    --main-color: #3E51CA;
+    --font-color: #231f20;
+}
+
+.fatecContainer {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 7% 0;
+}
+
+.title {
+    font-size: 3rem;
+    align-content: center;
+    text-align: center;
+}
+
+.title span {
+    font-size: 8rem;
+}
+
+.fatecText, .courseText {
+    align-content: center;
+}
+
+.arrowIcon {
+    min-height: 10vh;
+    padding: 0;
+    align-content: center;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.map iframe {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

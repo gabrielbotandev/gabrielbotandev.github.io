@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio | Gabriel Botan</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/animation.css">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
 </head>
 
@@ -14,73 +16,70 @@
     <a href="#home" class="logo"><span>g.</span>botan</a>
     <nav>
       <ul class="nav-links">
-        <li><a href="#about-me">Sobre mim</a></li>
-        <li><a href="#curriculum">Currículo</a></li>
-        <li><a href="#hard-skills">Habilidades</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
         <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
       </ul>
     </nav>
-    <a href="#contacts"><button>Contato</button></a>
   </header>
-  <div class="homeContainer">
-    <section class="home" id="home">
-      <div class="text-typing">
-        <p class="text">Olá,</p>
-        <p class="text">meu nome é</p>
-        <p class="text">Gabriel <span>Botan</span></p>
-      </div>
-      <div class="photo">
-        <img src="assets/images/foto.jpg" alt="" />
-      </div>
-    </section>
-  </div>
-  <div class="aboutContainer">
-    <section class="about-me" id="about-me">
-      <h2 class="title"><span class="emphasis">sobre</span><br>mim</h2>
-      <p class="about-text">
-        Me chamo Gabriel Ficcio Botan, um estudante de 19 anos, nascido em Jaú - SP. Atualmente, estou cursando
-        Desenvolvimento de Software Multiplataforma na Fatec de Jaú, após concluir o ensino médio de 2021-2023. Tenho
-        uma paixão pela tecnologia da informação, refletida em meus estudos e hobby em games. Além disso, encontro
-        prazer no design e em futebol, equilibrando minha vida entre o mundo virtual e as atividades ao ar livre.
-      </p>
-    </section>
-  </div>
-  <div class="cvContainer">
-    <section class="curriculum" id="curriculum">
-      <ul class="cv-body">
-        <li>
-          Atualmente cursando <b>desenvolvimento de software multiplataforma</b> na Fatec Jahu
-        </li>
-        <li>
-          <b>Soft skills: </b>Trabalho em equipe, pensamento crítico, gerenciamento do tempo, comunicação, liderança, empatia
-        </li>
-        <li>
-          <b>Hard skills: </b><a href="#hard-skills">Linguagens de programação</a>, arquiteturas de sistema, banco de
-          dados, stacks de desenvolvimento, ferramentas
-        </li>
-        <li>
-          <b>Idiomas: </b>Inglês B1 Intermediário (EF SET 50/100)
-        </li>
-      </ul>
-      <h2 class="title">meu<br><span class="emphasis">currículo</span></h2>
-    </section>
-  </div>
-  <div class="hsContainer">
-    <section class="hard-skills" id="hard-skills">
-      <h2 class="title">linguagens &<span class="emphasis">tecnologias</span></h2>
-      <p class="hs-body">
-        <img src="assets/icons/html.svg" alt="">
-        <img src="assets/icons/css.svg" alt="">
-        <img src="assets/icons/javascript.svg" alt="">
-        <img src="assets/icons/git.svg" alt="">
-        <img src="assets/icons/mysql.svg" alt="">
-      </p>
-    </section>
-  </div>
-  <div class="projectsContainer">
-    <section class="projects" id="projects">
-      <h2 class="title">meus<span class="emphasis">projetos</span></h2>
-      <div class="projects-display">
+  <section class="homeContainer" id="home">
+    <div class="homeIcons">
+      <a href="https://www.instagram.com/botan.gabriel/"><i class="bx bxl-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/gabrielficciobotan/"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://github.com/gabrielbotandev"><i class="bx bxl-github"></i></a>
+    </div>
+    <div class="text-typing">
+      <p class="text">Olá,</p>
+      <p class="text">meu nome é</p>
+      <p class="text">Gabriel <span>Botan</span></p>
+    </div>
+    <div class="photo">
+      <img src="assets/images/foto.jpg" alt="" />
+    </div>
+  </section>
+  <section class="aboutContainer" id="about">
+    <h2 class="title"><span class="emphasis">sobre</span><br>mim</h2>
+    <p class="aboutText">
+      Me chamo Gabriel Ficcio Botan, um estudante de 19 anos, nascido em Jaú - SP. Atualmente, estou cursando
+      Desenvolvimento de Software Multiplataforma na <a href="fatec.html">Fatec Jahu</a>, após concluir o ensino médio de 2021-2023. Tenho
+      uma paixão pela tecnologia da informação, refletida em meus estudos e hobby em games. Além disso, encontro
+      prazer no design e em futebol, equilibrando minha vida entre o mundo virtual e as atividades ao ar livre.
+    </p>
+  </section>
+  <section class="skillsContainer" id="skills">
+    <ul class="skillsText">
+      <li>
+        Atualmente cursando <b>desenvolvimento de software multiplataforma</b> na <a href="fatec.html">Fatec Jahu</a>
+      </li>
+      <li>
+        <b>Soft skills: </b>Trabalho em equipe, pensamento crítico, gerenciamento do tempo, comunicação, liderança,
+        empatia
+      </li>
+      <li>
+        <b>Hard skills: </b><a href="#tech">Linguagens de programação</a>, arquiteturas de sistema, banco de
+        dados, stacks de desenvolvimento
+      </li>
+      <li>
+        <b>Idiomas: </b>Inglês B1 Intermediário (EF SET 50/100)
+      </li>
+    </ul>
+    <h2 class="title">minhas<br><span class="emphasis">habilidades</span></h2>
+  </section>
+  <section class="techContainer" id="tech">
+    <h2 class="title">linguagens &<span class="emphasis">tecnologias</span></h2>
+    <p class="techBody">
+      <img src="assets/icons/html.svg" alt="">
+      <img src="assets/icons/css.svg" alt="">
+      <img src="assets/icons/javascript.svg" alt="">
+      <img src="assets/icons/git.svg" alt="">
+      <img src="assets/icons/mysql.svg" alt="">
+    </p>
+  </section>
+  <section class="projectsContainer" id="projects">
+    <h2 class="title">meus<span class="emphasis">projetos</span></h2>
+    <div class="projectShow">
+      <a href="https://github.com/gabrielbotandev/pass-in-reactjs">
         <div class="project">
           <img src="assets/images/passin.png" alt="projeto 1">
           <h2>Pass.in</h2>
@@ -90,8 +89,9 @@
             <i class='bx bxl-tailwind-css'></i>
           </div>
           <p>Sistema de check-in para eventos presenciais.</p>
-          <a href="https://github.com/gabrielbotandev/pass-in-reactjs">Veja mais</a>
         </div>
+      </a>
+      <a href="https://github.com/GoLearn-App">
         <div class="project">
           <img src="assets/images/golearn.svg" alt="projeto 2">
           <h2>GoLearn</h2>
@@ -100,46 +100,30 @@
             <i class='bx bxl-css3'></i>
             <i class='bx bxl-javascript'></i>
           </div>
-          <p>Plataforma de estudos</p>
-          <a href="https://github.com/GoLearn-App">Veja mais</a>
+          <p>Plataforma de estudos organizada e eficiente</p>
         </div>
-        <div class="project">
-          <img src="assets/images/passin.png" alt="projeto 1">
-          <h2>Pass.in</h2>
-          <div class="project-use">
-            <i class='bx bxl-react'></i>
-            <i class='bx bxl-typescript'></i>
-            <i class='bx bxl-tailwind-css'></i>
-          </div>
-          <p>Sistema de check-in para eventos presenciais.</p>
-          <a href="https://github.com/gabrielbotandev/pass-in-reactjs">Veja mais</a>
-        </div>
-      </div>
-    </section>
-  </div>
-  <div class="contactsContainer">
-    <section class="contacts" id="contacts">
-      <h2 class="title">conecte-se <span>comigo</span></h2>
-      <div class="contact">
-        <a href="https://www.instagram.com/botan.gabriel/">
-          <i class="bx bxl-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/gabrielficciobotan/">
-          <i class="bx bxl-linkedin"></i>
-        </a>
-        <a href="https://github.com/gabrielbotandev">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="mailto:gabrielficciobotan@gmail.com">
-          <i class="bx bxl-gmail"></i>
-        </a>
-    </section>
-    <footer>
-      <div class="footer">
-        <p>&copy 2024 Gabriel F. Botan</p>
-      </div>
-    </footer>
-  </div>
+      </a>
+    </div>
+  </section>
+  <section class="contactContainer" id="contact">
+    <h2 class="title">conecte-se <span>comigo</span></h2>
+    <div class="contactIcons">
+      <a href="https://www.instagram.com/botan.gabriel/">
+        <i class="bx bxl-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/gabrielficciobotan/">
+        <i class="bx bxl-linkedin"></i>
+      </a>
+      <a href="https://github.com/gabrielbotandev">
+        <i class="bx bxl-github"></i>
+      </a>
+      <a href="mailto:gabrielficciobotan@gmail.com">
+        <i class="bx bxl-gmail"></i>
+      </a>
+  </section>
+  <footer>
+    <p>&copy Copyright 2024 Gabriel F. Botan</p>
+  </footer>
 </body>
 
 </html>
