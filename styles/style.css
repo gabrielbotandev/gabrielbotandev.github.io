@@ -3,6 +3,7 @@
 :root {
     --bg-color: #F9F9FB;
     --main-color: #3E51CA;
+    --secondary-color: #2f3c8f;
     --font-color: #231f20;
 }
 
@@ -154,14 +155,14 @@ a {
 
 .aboutText a {
     font-size: 1.5rem;
-    color: var(--font-color-color);
+    color: var(--main-color);
     font-weight: 400;
     text-decoration: underline;
     transition: all .3s ease;
 }
 
 .aboutText a:hover {
-    color: var(--main-color);
+    color: var(--secondary-color);
 }
 
 /* -------------------------------------------*/
@@ -201,14 +202,14 @@ a {
 
 .skillsText a {
     font-size: 1.5rem;
-    color: var(--font-color-color);
+    color: var(--main-color);
     font-weight: 400;
     text-decoration: underline;
     transition: all .3s ease;
 }
 
 .skillsText a:hover {
-    color: var(--main-color);
+    color: var(--secondary-color);
 }
 
 /* -------------------------------------------*/
@@ -283,7 +284,7 @@ a {
 }
 
 .project:hover {
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 
 .project img {
@@ -325,7 +326,7 @@ a {
     font-size: 100px;
     padding: 30px;
     color: var(--main-color);
-    transition: .5s ease;
+    transition: all .3s ease;
 }
 
 .contactIcons a {
@@ -333,17 +334,16 @@ a {
     border-radius: 50%;
     background-color: var(--bg-color);
     margin: 50px 50px 0 50px;
-    transition: .5s ease;
+    transition: all .3s ease;
 }
 
 .contactIcons i:hover {
     color: var(--bg-color);
-    transition: .5s ease;
 }
 
 .contactIcons a:hover {
     background-color: var(--main-color);
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 /* -------------------------------------------*/

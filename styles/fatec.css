@@ -31,6 +31,10 @@
     align-content: center;
     text-align: center;
     font-size: 3rem;
+}
+
+.arrowIcon a {
+    text-decoration: none;
     color: var(--main-color);
 }
 

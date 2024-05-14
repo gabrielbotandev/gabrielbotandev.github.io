@@ -20,13 +20,12 @@ nav {
     color: var(--font-color);
     cursor: pointer;
     padding: 0;
-    transition: .3s ease;
+    transition: all .3s ease;
     align-content: center;
 }
 
 .logo:hover {
     transform: scale(0.95);
-    transition: .3s ease;
 }
 
 .nav-links {
