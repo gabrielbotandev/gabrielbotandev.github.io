@@ -6,23 +6,33 @@
 
 .fatecContainer {
     min-height: 90vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 5rem 7% 0;
+}
+
+.fatecContainer p {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--font-color);
 }
 
 .title {
     font-size: 3rem;
     align-content: center;
-    text-align: center;
+    margin: 0;
 }
 
 .title span {
-    font-size: 8rem;
+    font-size: 6rem;
 }
 
-.fatecText, .courseText {
+.fatecText {
     align-content: center;
+    text-align: left;
+}
+
+.courseText {
+    align-content: center;
+    text-align: right;
 }
 
 .arrowIcon {
@@ -42,4 +52,8 @@
     width: 100%;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map {
+    text-align: center;
 }
