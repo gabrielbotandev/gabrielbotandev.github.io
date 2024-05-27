@@ -56,4 +56,6 @@
 
 .map {
     text-align: center;
+    min-height: 90vh;
+    padding-bottom: 0;
 }
