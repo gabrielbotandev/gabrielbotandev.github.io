@@ -1,3 +1,14 @@
+.text-typing {
+    padding: 20px;
+    margin-right: 3rem;
+}
+
+.text-typing p {
+    border-right: 0.05em solid var(--font-color);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .text-typing p:nth-child(1) {
     width: 200px;
     -webkit-animation: type 1s steps(4, end);

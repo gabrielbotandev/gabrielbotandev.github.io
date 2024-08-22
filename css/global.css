@@ -5,6 +5,8 @@
     --main-color: #3E51CA;
     --secondary-color: #2f3c8f;
     --font-color: #231f20;
+    --dark-bg-color: #080808;
+    --dark-font-color: #F9F9FB;
 }
 
 * {
@@ -14,10 +16,38 @@
 
 body {
     background-color: var(--bg-color);
+    color: var(--font-color);
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
     margin: 0%;
     overflow-x: hidden;
+    transition: all .3s ease;
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-font-color);
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--font-color);
+    transition: color 0.3s;
+}
+
+#theme-toggle i {
+    transition: transform 0.3s;
+}
+
+body.dark-mode #theme-toggle {
+    color: var(--dark-font-color);
+}
+
+body.dark-mode #theme-toggle i {
+    transform: rotate(180deg);
 }
 
 section {
@@ -34,15 +64,16 @@ span {
     font-size: 100px;
 }
 
-h2 {
-    color: var(--font-color);
-}
-
 a {
+    color: var(--font-color);
     text-decoration: none;
     border: 1px none;
     border-radius: 100px;
     display: inline-block;
+}
+
+body.dark-mode a {
+    color: var(--dark-font-color);
 }
 
 ::-webkit-scrollbar {
@@ -67,7 +98,6 @@ a {
 }
 
 .text {
-    color: var(--font-color);
     font-size: 4rem;
     letter-spacing: 5px;
     border-right: 4px solid;
@@ -101,21 +131,25 @@ a {
     background-color: var(--font-color);
 }
 
+body.dark-mode .homeIcons i {
+    border-color: var(--dark-font-color);
+    color: var(--dark-font-color);
+}
+
+body.dark-mode .homeIcons i:hover {
+    color: var(--dark-bg-color);
+    background-color: var(--dark-font-color);
+}
+
 .photo img {
     border-radius: 50%;
     width: 20rem;
-    box-shadow: 10px 10px 39px 3px rgba(0, 0, 0, 0.50);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
 }
 
-.text-typing {
-    padding: 20px;
-    margin-right: 3rem;
-}
-
-.text-typing p {
-    border-right: 0.05em solid var(--font-color);
-    white-space: nowrap;
-    overflow: hidden;
+body.dark-mode .photo img {
+    box-shadow: 0 4px 8px var(--main-color);
 }
 
 /* -------------------------------------------*/
@@ -145,12 +179,15 @@ a {
 }
 
 .aboutText {
-    color: var(--font-color);
     margin: 0 50px 0 50px;
     font-size: 1.5rem;
     border-radius: 25px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     padding: 50px;
+}
+
+body.dark-mode .aboutText {
+    box-shadow: 0px 0px 10px var(--main-color);
 }
 
 .aboutText a {
@@ -186,12 +223,15 @@ a {
 }
 
 .skillsText {
-    color: var(--font-color);
     margin: 0 50px 0 50px;
     font-size: 1.5rem;
     border-radius: 25px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     padding: 50px;
+}
+
+body.dark-mode .skillsText {
+    box-shadow: 0px 0px 10px var(--main-color);
 }
 
 .skillsText li {
@@ -230,7 +270,6 @@ a {
 }
 
 .techBody {
-    color: var(--font-color);
     margin: 0 50px 0 50px;
     font-size: 3rem;
     padding: 3rem 3rem 0;
@@ -268,7 +307,6 @@ a {
 }
 
 .projectShow a {
-    color: var(--font-color);
     text-decoration: none;
 }
 
@@ -279,6 +317,10 @@ a {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     cursor: pointer;
+}
+
+body.dark-mode .project {
+    box-shadow: 0px 0px 10px var(--main-color);
 }
 
 .project:hover {
@@ -310,7 +352,6 @@ a {
 
 .contactContainer .title {
     font-size: 3rem;
-    color: var(--font-color);
     text-align: center;
     margin: 2rem 0 0;
 }
@@ -330,7 +371,6 @@ a {
 .contactIcons a {
     border: 1px solid var(--main-color);
     border-radius: 50%;
-    background-color: var(--bg-color);
     margin: 50px 50px 0 50px;
     transition: all .3s ease;
 }
@@ -344,18 +384,14 @@ a {
     transform: scale(0.95);
 }
 
-/* -------------------------------------------*/
-/*                   FOOTER                   */
-/* -------------------------------------------*/
-
-footer {
-    background-color: var(--main-color);
-    padding: 20px;
-    text-align: center;
-    width: 100vw;
+body.dark-mode .contactIcons i:hover {
+    color: var(--dark-bg-color);
 }
 
-footer p {
-    font-family: "Poppins", sans-serif;
-    color: white;
+body.dark-mode .contactIcons a {
+    color: var(--dark-font-color);
+}
+
+body.dark-mode .contactIcons a:hover {
+    color: var(--main-color);
 }

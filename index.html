@@ -5,9 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio | Gabriel Botan</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/animation.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   <link rel="shortcut icon" type="image/png" href="assets/icons/favicon.svg">
 </head>
@@ -23,6 +24,9 @@
         <li><a href="#contact">Contato</a></li>
       </ul>
     </nav>
+    <button id="theme-toggle">
+      <i class="bx bx-moon"></i>
+    </button>
   </header>
   <section class="homeContainer" id="home">
     <div class="homeIcons">
@@ -36,14 +40,14 @@
       <p class="text">Gabriel <span>Botan</span></p>
     </div>
     <div class="photo">
-      <img src="assets/images/foto.webp" alt="" />
+      <img src="assets/images/foto.webp" alt="foto gabriel botan" />
     </div>
   </section>
   <section class="aboutContainer" id="about">
     <h2 class="title"><span class="emphasis">sobre</span><br>mim</h2>
     <p class="aboutText">
       Meu nome é Gabriel Ficcio Botan, tenho 19 anos e sou de Jaú - SP. Atualmente, estudo Desenvolvimento de Software
-      Multiplataforma na <a href="fatec.html">Fatec Jahu</a>, após concluir o ensino médio em 2023. Tenho uma paixão
+      Multiplataforma na Fatec Jahu, após concluir o ensino médio em 2023. Tenho uma paixão
       pela tecnologia da informação, refletida em meus estudos e hobby em games. Além da minha dedicação aos estudos de
       desenvolvimento de software, tenho um profundo interesse pela arte e acredito que essa imersão no mundo artístico
       não só enriquece minha vida pessoal, mas também influencia positivamente minha abordagem no desenvolvimento de
@@ -53,14 +57,14 @@
   <section class="skillsContainer" id="skills">
     <ul class="skillsText">
       <li>
-        Atualmente cursando <b>desenvolvimento de software multiplataforma</b> na <a href="fatec.html">Fatec Jahu</a>
+        Atualmente cursando <b>desenvolvimento de software multiplataforma</b> na Fatec Jahu
       </li>
       <li>
         <b>Soft skills: </b>Trabalho em equipe, resolução de problemas, pensamento crítico, gerenciamento do tempo,
         adaptabilidade, comunicação e liderança
       </li>
       <li>
-        <b>Hard skills: </b><a href="#tech">Linguagens de programação</a>, arquiteturas de sistema, banco de
+        <b>Hard skills: </b>Linguagens de programação, arquiteturas de sistema, banco de
         dados e stacks de desenvolvimento
       </li>
       <li>
@@ -125,8 +129,13 @@
       </a>
   </section>
   <footer>
-    <p>&copy Copyright 2024 Gabriel F. Botan</p>
+    <p>&copy; 2024 Gabriel Botan</p>
+    <button id="backToTop" class="back-to-top">
+      <i class='bx bx-up-arrow-alt'></i>
+    </button>
   </footer>
 </body>
+
+<script src="js/script.js"></script>
 
 </html>

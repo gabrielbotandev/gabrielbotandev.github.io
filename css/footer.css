@@ -1,0 +1,45 @@
+footer {
+    background-color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+}
+
+footer p {
+    font-family: "Poppins", sans-serif;
+    color: var(--bg-color);
+}
+
+body.dark-mode footer p {
+    color: var(--dark-bg-color);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary-color);
+}
+
+.back-to-top i {
+    color: var(--bg-color);
+    font-size: 24px;
+}
+
+body.dark-mode .back-to-top i {
+    color: var(--dark-bg-color);
+}
