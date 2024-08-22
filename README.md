@@ -15,6 +15,13 @@ O repositório está organizado da seguinte forma:
 - `js/`: Contém os arquivos JavaScript para interatividade.
 - `assets/`: Contém imagens e outros recursos utilizados no site.
 
+## ⚙️ Funcionalidades
+
+- **Dark/Light Mode:** O portfólio possui um switch que permite alternar entre o modo escuro e o modo claro, oferecendo uma experiência personalizada ao usuário.
+- **Responsividade:** O design é completamente responsivo, garantindo uma ótima visualização em dispositivos móveis, tablets e desktops.
+- **Animações Suaves:** Transições e animações fluídas são aplicadas para tornar a navegação mais agradável e intuitiva.
+- **Interatividade:** Elementos interativos com feedback visual que aprimoram a experiência do usuário.
+
 ## 💻 Como Rodar o Projeto Localmente
 
 Para visualizar o portfólio localmente, siga os passos abaixo:
