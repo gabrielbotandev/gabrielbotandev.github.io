@@ -1,0 +1,241 @@
+/*----------------------------------------------*/
+/*                   HEADER                     */
+/*----------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    header {
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.show {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-color);
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show li {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.show a {
+        margin: 0;
+        padding: 10px;
+        display: block;
+    }
+}
+
+/*----------------------------------------------*/
+/*                   GLOBAL                     */
+/*----------------------------------------------*/
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .emphasis {
+        font-size: 4rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .homeContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .text {
+        font-size: 3rem;
+        border-right: none;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .homeIcons {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .homeIcons i {
+        margin: 0 10px;
+        font-size: 2rem;
+    }
+
+    .photo img {
+        width: 10rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 1rem;
+    }
+
+    .aboutContainer .title {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .aboutContainer img {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .aboutText {
+        margin: 2rem 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .skillsContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .skillsContainer .title {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .skillsText {
+        margin: 2rem 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .techContainer {
+        padding-top: 0;
+        padding-bottom: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .techBody {
+        margin: 2rem 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .projectsContainer {
+        padding-top: 0;
+        padding-bottom: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .projectsContainer .title {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .projectShow {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project {
+        margin: 2rem 0;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contactContainer {
+        padding-top: 0;
+        padding-bottom: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .contactContainer .title {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .contactIcons {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contactIcons a {
+        margin: 1rem;
+        font-size: 2rem;
+    }
+}
+
+/*----------------------------------------------*/
+/*                  ANIMATION                   */
+/*----------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    .text-typing {
+        min-width: 440px;
+        margin: 0;
+    }
+
+    .text-typing p:nth-child(1) {
+        max-width: 110px;
+    }
+
+    .text-typing p:nth-child(2) {
+        max-width: 350px;
+    }
+
+    .text-typing p:nth-child(3) {
+        max-width: 400px;
+    }
+}
+
+/*----------------------------------------------*/
+/*                   FOOTER                     */
+/*----------------------------------------------*/
+
+@media (max-width: 768px) {
+
+    footer {
+        padding: 10px;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+}

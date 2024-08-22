@@ -182,7 +182,7 @@ body.dark-mode .photo img {
     margin: 0 50px 0 50px;
     font-size: 1.5rem;
     border-radius: 25px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 50px;
 }
 
@@ -226,7 +226,7 @@ body.dark-mode .aboutText {
     margin: 0 50px 0 50px;
     font-size: 1.5rem;
     border-radius: 25px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 50px;
 }
 
@@ -293,7 +293,7 @@ body.dark-mode .skillsText {
 }
 
 .projectsContainer .title {
-    margin: 0 50px 50px ;
+    margin: 0 50px 50px;
     font-size: 3rem;
 }
 
@@ -314,7 +314,7 @@ body.dark-mode .skillsText {
     border-radius: 15px;
     padding-bottom: 15px;
     margin: 0 15px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     cursor: pointer;
 }
